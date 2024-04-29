@@ -1,0 +1,10 @@
+# Disable directory listing
+Options -Indexes
+
+# Deny access to all users
+Order deny,allow
+
+RewriteEngine On
+RewriteRule ^Register$ index.php [L]
+RewriteRule ^Players$ display_players.php [L]
+RewriteRule ^Auction_card2023$ player_card.php [L]
